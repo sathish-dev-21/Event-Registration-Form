@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration form</title>
+</head>
+<body>
+    <header>
+        <h1>Tech Fest 2k26</h1>
+        <p>This is a National level tech event contact on our college.</p>
+    </header>
+    <main>
+        <!--Event Details-->
+        <section>
+            <h2>Event Details</h2>
+            <p>Event Date: 15th October 2026</p>
+            <p>Event Location: College Auditorium</p>
+        </section>
+        <hr>
+
+        <!--Event schedule-->
+        <section>
+            <h2>Event schedule</h2>
+            <table border="">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Event name</th>
+                        <th>Time</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>Paper presentation</td>
+                        <td>9am to 10am</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Poster presentation</td>
+                        <td>10am to 11am</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Quiz</td>
+                        <td>11am to 12pm</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>Project expo</td>
+                        <td>12pm to 1pm</td>
+                    </tr>
+                    <tr>
+                        <td>4.5.</td>
+                        <td>Lunch</td>
+                        <td>1pm to 2pm</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>Hackathon</td>
+                        <td>2pm to 3pm</td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td>Conclusion</td>
+                        <td>3pm to 4pm</td>
+                    </tr>
+                </thead>
+            </table>
+        </section>
+        <hr>
+        <!--Event Registration form-->
+        <section>
+            <h2>Event Registration form</h2>
+            <form action="submit_registration.php" method="POST">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="Enter your name" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="Enter your email" id="email" name="email" required><br><br>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" placeholder="Enter your phone number" id="phone" name="phone" required><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>College Information</legend>
+                    <label for="college">College Name:</label>
+                    <input type="text" placeholder="Enter your college name" id="college" name="college" required><br><br>
+
+                    <label for="branch">Branch:</label>
+                    <input type="text" placeholder="Enter your branch" id="branch" name="branch" required><br><br>
+
+                    <label for="year">Year of Study:</label>
+                    <select id="year" name="year" required>
+                        <option value="">--Select year--</option>
+                        <option value="1st_year">1st Year</option>
+                        <option value="2nd_year">2nd Year</option>
+                        <option value="3rd_year">3rd Year</option>
+                        <option value="4th_year">4th Year</option>
+                    </select><br><br>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Event Selection</legend>
+                    <label for="event">Select Event:</label>
+                    <select id="event" name="event" required>
+                        <option value="">--Select an event--</option>
+                        <option value="paper_presentation">Paper Presentation</option>
+                        <option value="poster_presentation">Poster Presentation</option>
+                        <option value="quiz">Quiz</option>
+                        <option value="project_expo">Project Expo</option>
+                        <option value="hackathon">Hackathon</option>
+                    </select><br><br>
+                </fieldset>
+
+                <input type="submit" value="Register">
+            </form>
+           
+        </section>
+        <hr>
+        <!--footer section-->
+        <footer>
+            <p>&copy; 2026 Tech Fest. All rights reserved.</p>
+    </main>
+</body>
+</html>
